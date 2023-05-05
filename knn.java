@@ -13,7 +13,7 @@ public class knn {
                     line -> {
                         List<Double> params = new ArrayList<>();
                         String[] tmp = line.split(",");
-                        for (int i = 0; i < tmp.length-2; i++) {
+                        for (int i = 0; i < tmp.length-1; i++) {
                             params.add(Double.parseDouble(tmp[i]));
                         }
                         new ObjectK(params,tmp[tmp.length-1]);
